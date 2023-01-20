@@ -1,0 +1,259 @@
+:root {
+  --Blue: hsl(246, 80%, 60%);
+
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--Dark-blue);
+  width: 330px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.bg {
+  background-image: url("../../images/icon-work.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: var(--Light_orange);
+  height: 40px;
+  border-radius: 15px 15px 0px 0px;
+  position: relative;
+}
+
+.report {
+  margin-top: 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin: 30px;
+  padding-bottom: 35px;
+}
+
+.time {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.prev {
+  display: flex;
+  flex-direction: column;
+  color: var(--Desaturated-blue);
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 11px;
+}
+
+.prev img {
+  width: 23px;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.title {
+  position: relative;
+  margin-right: auto;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.top img {
+  height: 63px;
+  border: white solid 3.5px;
+  border-radius: 50%;
+}
+
+.top {
+  display: flex;
+  background-color: var(--Blue);
+  border-radius: 15px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  right: 30%;
+}
+
+.text h2 {
+  font-weight: 300;
+}
+
+.text {
+  margin-left: 25px;
+}
+
+.card:hover {
+  background-color: hsl(234, 36%, 44%);
+  cursor: pointer;
+}
+
+.report:hover {
+  background-color: var(--Dark-blue);
+  cursor: default;
+}
+
+.report button {
+  background-color: transparent;
+  color: var(--Pale-Blue);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.report {
+  height: 185px;
+}
+
+.report button:hover {
+  color: white;
+}
+
+.work .bg {
+  background-color: var(--Light-red-work);
+}
+
+.play .bg {
+  background-color: var(--Soft-blue-play);
+  background-image: url("./images/icon-play.svg");
+}
+
+.study .bg {
+  background-color: var(--Light-red-study);
+  background-image: url("./images/icon-study.svg");
+}
+
+.exercise .bg {
+  background-color: var(--Lime-green-exercise);
+  background-image: url("./images/icon-exercise.svg");
+}
+
+.social .bg {
+  background-color: var(--Violet-social);
+  background-image: url("./images/icon-social.svg");
+}
+
+.self .bg {
+  background-color: var(--Soft-orange-self-care);
+  background-image: url("./images/icon-self-care.svg");
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+  }
+  .report {
+    height: 90%;
+    grid-row: 1 / 3;
+  }
+
+  .card {
+    width: 99%;
+    margin-right: 10px;
+  }
+
+  .top {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    word-wrap: break-all;
+  }
+
+  .break::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .top img {
+    height: 70px;
+    position: relative;
+    top: -12%;
+    right: 20%;
+  }
+
+  .work,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .self {
+    height: 80%;
+  }
+
+  .text h1 {
+    margin-right: 60px;
+  }
+
+  .text h2,
+  .text h1 {
+    position: relative;
+    right: 15%;
+  }
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+  }
+
+  .btn button {
+    margin-bottom: 10px;
+  }
+}

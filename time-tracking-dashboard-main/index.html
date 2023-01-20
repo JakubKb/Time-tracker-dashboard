@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="report card">
+        <div class="top">
+          <img src="./images/image-jeremy.png" />
+          <span class="text">
+            <h1>Report for</h1>
+            <h2>Jeremy <span class="break">Robson</span></h2>
+          </span>
+        </div>
+        <span class="btn">
+          <button id="daily">Daily</button>
+          <button id="weekly">Weekly</button>
+          <button id="monthly">Monthly</button>
+        </span>
+      </div>
+      <div class="work card">
+        <div class="bg"></div>
+        <div class="content_work content">
+          <div class="left">
+            <div class="title">Work</div>
+            <div class="time">5hrs</div>
+          </div>
+          <div class="prev">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+            <span class="previous">Previous - 7hr</span>
+          </div>
+        </div>
+      </div>
+      <div class="play card">
+        <div class="bg"></div>
+        <div class="play_content content">
+          <div class="left">
+            <div class="title">Play</div>
+            <div class="time">1hrs</div>
+          </div>
+          <div class="prev">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+            <span class="previous">Previous - 2hr</span>
+          </div>
+        </div>
+      </div>
+      <div class="study card">
+        <div class="bg"></div>
+        <div class="study_content content">
+          <div class="left">
+            <div class="title">Study</div>
+            <div class="time">0hrs</div>
+          </div>
+          <div class="prev">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+            <span class="previous">Previous - 1hr</span>
+          </div>
+        </div>
+      </div>
+      <div class="exercise card">
+        <div class="bg"></div>
+        <div class="exercise_content content">
+          <div class="left">
+            <div class="title">Exercise</div>
+            <div class="time">1hrs</div>
+          </div>
+          <div class="prev">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+            <span class="previous">Previous - 1hr</span>
+          </div>
+        </div>
+      </div>
+      <div class="social card">
+        <div class="bg"></div>
+        <div class="social_content content">
+          <div class="left">
+            <div class="title">Social</div>
+            <div class="time">1hrs</div>
+          </div>
+          <div class="prev">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+            <span class="previous">Previous - 3hr</span>
+          </div>
+        </div>
+      </div>
+      <div class="self card">
+        <div class="bg"></div>
+        <div class="self_content content">
+          <div class="left">
+            <div class="title">Self Care</div>
+            <div class="time">0hrs</div>
+          </div>
+          <div class="prev">
+            <img src="./images/icon-ellipsis.svg" alt="" />
+            <span class="previous">Previous - 1hr</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/JustKooba">JustKooba</a>.
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
